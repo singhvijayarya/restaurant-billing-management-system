@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <title>Restaurant Desk</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#dashboard"
+          ><span class="brand-mark">GF</span
+          ><span
+            ><b id="brand-name">Green Fork</b
+            ><small>RESTAURANT DESK</small></span
+          ></a
+        >
+        <div class="nav-label">WORKSPACE</div>
+        <nav id="nav">
+          <a href="#dashboard" data-page="dashboard" class="nav-link active"
+            ><span>▦</span>Overview</a
+          ><a href="#new-order" data-page="new-order" class="nav-link"
+            ><span>＋</span>New order</a
+          ><a href="#menu" data-page="menu" class="nav-link"
+            ><span>▤</span>Menu</a
+          ><a href="#orders" data-page="orders" class="nav-link"
+            ><span>◷</span>Order history</a
+          >
+        </nav>
+        <div class="sidebar-bottom">
+          <span class="live-dot"></span> Service is running
+          <small>Local restaurant workspace</small>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">RESTAURANT OPERATIONS</div>
+            <h1 id="page-title">Overview</h1>
+          </div>
+          <a href="#new-order" class="button button-dark"
+            ><span>＋</span> Create order</a
+          >
+        </header>
+        <div id="notice" class="notice" role="status" aria-live="polite"></div>
+        <section id="content" aria-live="polite"></section>
+      </main>
+    </div>
+    <div id="modal-root"></div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

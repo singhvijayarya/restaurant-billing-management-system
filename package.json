@@ -1,0 +1,13 @@
+{
+  "name": "restaurant-billing-management",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Restaurant ordering, billing, menu management, and receipt application",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/app.test.js",
+    "db:init": "node scripts/init-db.js"
+  },
+  "engines": { "node": ">=22.13" }
+}
